@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Tabela IMC</h1>
+
+    <h2>IMC</h2>
+    
+    <table>
+      <th class="tab-direita">
+        <tr>
+          <p>Menos do que 18,5</p>
+        </tr>
+        <tr>
+          <p>Entre 18,5 e 24,9</p>
+        </tr>
+        <tr>
+          <p>Entre 25 e 29,9</p>
+        </tr>
+        <tr>
+          <p>Entre 30 e 34,9</p>
+        </tr>
+        <tr>
+          <p>Entre 35 e 39,9</p>
+        </tr>
+        <tr>
+          <p>Mais do que 40</p>
+        </tr>
+      </th>
+    </table>
+
+    <h2>Resultado</h2>
+
+    <table>
+      <th class="tab-esquerda">
+        <tr>
+          <p>Abaixo do peso</p>
+        </tr>
+        <tr>
+          <p>Peso normal</p>
+        </tr>
+        <tr>
+          <p>Sobrepeso</p>
+        </tr>
+        <tr>
+          <p>Obesidade 1</p>
+        </tr>
+        <tr>
+          <p>Obesidade 2</p>
+        </tr>
+        <tr>
+          <p>Obesidade 3</p>
+        </tr>
+      </th>
+    </table>
+
+    <form action="" method="get" class="form">
+      <label for="input-peso">Peso:</label>
+      <input type="text" class="input-peso" placeholder="Exemplo: 90">
+
+      <label for="input-altura">Altura:</label>
+      <input type="text" class="input-altura" placeholder="Exemplo: 1.80">
+
+      <button type="submit">Calcular</button>
+    </form>
+
+    <div class="resultado"></div>
+    <div class="resultadoRed"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
