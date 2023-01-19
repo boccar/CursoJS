@@ -28,11 +28,15 @@ function meuEscopo() {
 
         if (peso.value == '' && altura.value == '') {
             resultadoRed.innerHTML += `<p>Peso e altura não informado</p>`;
+        } else if (peso.value == '' ) {
+            resultadoRed.innerHTML += `<p>Peso não informado</p>`;
+        } else if (altura.value == '' ) {
+            resultadoRed.innerHTML += `<p>Altura não informado</p>`;
         } else if (peso.value < 20 || peso.value > 400) {
             resultadoRed.innerHTML += `<p>Os dados fornecidos são invalidos</p>`;
-        }  
-        
-        else {
+        } else if (altura.value < 0.80 || altura.value > 3.00) {
+            resultadoRed.innerHTML += `<p>Os dados fornecidos são invalidos</p>`; 
+        } else {
             resultado.innerHTML += `<p>Seu IMC é de: <strong>${imcFormat.toFixed(1)}</strong> (${resultadoText})</p>`;
         }
 
