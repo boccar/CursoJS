@@ -13,4 +13,3 @@ if (userScore >= 1000) {
     console.log('Usuario normal');
 }
 
-
