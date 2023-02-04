@@ -35,6 +35,7 @@ function resetTimer() {
 
 
 start.addEventListener('click', function (event) {
+    clearInterval(timerr);
     startTimer()
 });
 
